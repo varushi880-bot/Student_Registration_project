@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    </head>
+    <body>
+        <div class="success-container ">
+            <div class="success-card">
+                <div class="success-icon">
+                  <img src="static/images/circle.png" alt="tick">
+                </div>
+                <h1>Registration Successful!</h1>
+                <p>Your registration has been completed successfully</p>
+                <div class="student-login">
+                  <h3> Your Details</h3>
+                  <hr>
+                   <div class="details-row">
+                    <span class="emoji">👤</span>
+                     <span class="label">Name</span>
+                     <span class="value">{{name}}</span>
+                   </div>
+                   <div class="details-row">
+                     <span class="label">Email</span>
+                     <span class="value">{{email}}</span>
+                   </div>
+                   <div class="details-row">
+                     <span class="label">Age</span>
+                     <span class="value">{{age}}</span>
+                   </div>
+                   <div class="details-row">
+                     <span class="label">Course</span>
+                     <span class="value">{{course}}</span>
+                   </div>
+                   <div class="details-row">
+                     <span class="label">Mobile No.</span>
+                     <span class="value">{{mobile}}</span>
+                   </div>
+                   <div class="details-row">
+                     <span class="label">Gender</span>
+                     <span class="value">{{gender}}</span>
+                   </div>
+                                  
+                </div>  
+                <a href="/" class="back-btn">👤Register Another Student</a>
+            </div>    
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
